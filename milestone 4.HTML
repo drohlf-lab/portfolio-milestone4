@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Project Milestone 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+
+  <main>
+    <!-- 1. DOM Interaction -->
+    <section id="about-section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>Welcome to my portfolio page.</p>
+      <button id="toggle-about-btn" type="button" aria-expanded="false" aria-controls="more-about">
+        Show More About Me
+      </button>
+      <div id="more-about" class="hidden">
+        <p>Extra details about my portfolio, projects, and coursework.</p>
+      </div>
+    </section>
+
+    <!-- 2. Contact Form Validation -->
+    <section id="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form id="contact-form" novalidate>
+        <div>
+          <label for="visitor-name">Name</label>
+          <input id="visitor-name" name="name" type="text" required>
+          <span id="name-error" class="error-msg" aria-live="polite"></span>
+        </div>
+
+        <div>
+          <label for="visitor-email">Email</label>
+          <input id="visitor-email" name="email" type="email" required>
+          <span id="email-error" class="error-msg" aria-live="polite"></span>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p id="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- 3. Optional Bonus: Public API Fetch -->
+    <section id="github-lookup" aria-labelledby="github-heading">
+      <h2 id="github-heading">GitHub Profile Lookup</h2>
+      <label for="gh-username">GitHub Username</label>
+      <input id="gh-username" type="text" placeholder="e.g., octocat">
+      <button id="load-gh-btn" type="button">Load Profile</button>
+      <div id="gh-result" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Portfolio Site</p>
+  </footer>
+</body>
+</html>
