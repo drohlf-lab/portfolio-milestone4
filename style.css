@@ -128,4 +128,32 @@ button:hover {
   height: 1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
+}#more-about {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border-left: 4px solid #1d4ed8;
+  border-radius: 6px;
+}
+
+.error-msg {
+  display: block;
+  margin-top: 6px;
+  color: #b91c1c;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#form-status {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+#gh-result {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
 }
